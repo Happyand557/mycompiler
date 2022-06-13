@@ -1,0 +1,72 @@
+space: root
+val:
+dp  shape: [18,18,18,18,18,7]
+list  shape: [200]
+cns  shape: [20]
+
+func: 
+getint  type: int
+getch  type: int
+getarray  type: int
+putint  type: void
+putch  type: void
+putarray  type: void
+starttime  type: void
+stoptime  type: void
+equal  type: int
+dfs  type: int
+main  type: int
+
+  space: equal
+  val:
+  a  
+  b  
+
+
+  space: dfs
+  val:
+  a  
+  b  
+  c  
+  d  
+  e  
+  last  
+  ans  
+
+
+  space: main
+  val:
+  n  
+  i  
+  ans  
+
+
+    space: block
+    val:
+    j  
+
+
+      space: block
+      val:
+      k  
+
+
+        space: block
+        val:
+        l  
+
+
+          space: block
+          val:
+          m  
+
+
+            space: block
+            val:
+            h  
+
+
+
+
+
+

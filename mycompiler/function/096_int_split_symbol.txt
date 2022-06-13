@@ -1,0 +1,36 @@
+space: root
+val:
+N  
+newline  
+
+func: 
+getint  type: int
+getch  type: int
+getarray  type: int
+putint  type: void
+putch  type: void
+putarray  type: void
+starttime  type: void
+stoptime  type: void
+split  type: int
+main  type: int
+
+  space: split
+  val:
+  n  
+  a  shape: [1]
+  i  
+
+
+
+
+  space: main
+  val:
+  i  
+  m  
+  b  shape: [4]
+  t  
+
+
+
+

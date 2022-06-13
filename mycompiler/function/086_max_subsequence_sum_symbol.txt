@@ -1,0 +1,31 @@
+space: root
+
+func: 
+getint  type: int
+getch  type: int
+getarray  type: int
+putint  type: void
+putch  type: void
+putarray  type: void
+starttime  type: void
+stoptime  type: void
+maxSubArray  type: int
+main  type: int
+
+  space: maxSubArray
+  val:
+  nums  shape: [1]
+  n  
+  sum  
+  max  
+  i  
+
+
+
+
+  space: main
+  val:
+  res  
+  a  shape: [10]
+
+

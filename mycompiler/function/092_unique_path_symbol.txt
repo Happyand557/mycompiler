@@ -1,0 +1,37 @@
+space: root
+
+func: 
+getint  type: int
+getch  type: int
+getarray  type: int
+putint  type: void
+putch  type: void
+putarray  type: void
+starttime  type: void
+stoptime  type: void
+uniquePaths  type: int
+main  type: int
+
+  space: uniquePaths
+  val:
+  m  
+  n  
+  dp  shape: [9]
+  i  
+  j  
+
+
+
+
+
+
+
+
+
+
+  space: main
+  val:
+  res  
+  n  
+
+

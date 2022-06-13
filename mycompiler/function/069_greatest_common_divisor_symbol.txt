@@ -1,0 +1,30 @@
+space: root
+
+func: 
+getint  type: int
+getch  type: int
+getarray  type: int
+putint  type: void
+putch  type: void
+putarray  type: void
+starttime  type: void
+stoptime  type: void
+fun  type: int
+main  type: int
+
+  space: fun
+  val:
+  m  
+  n  
+  rem  
+
+
+
+
+  space: main
+  val:
+  n  
+  m  
+  num  
+
+

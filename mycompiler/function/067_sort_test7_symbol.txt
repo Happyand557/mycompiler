@@ -1,0 +1,43 @@
+space: root
+val:
+buf  shape: [2,100]
+
+func: 
+getint  type: int
+getch  type: int
+getarray  type: int
+putint  type: void
+putch  type: void
+putarray  type: void
+starttime  type: void
+stoptime  type: void
+merge_sort  type: void
+main  type: int
+
+  space: merge_sort
+  val:
+  l  
+  r  
+  mid  
+  i  
+  j  
+  k  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  space: main
+  val:
+  n  
+
+

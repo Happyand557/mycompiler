@@ -1,0 +1,398 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
+# GNU Make 4.2.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Mon Jun 13 15:35:51 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+WSLENV = VSCODE_WSL_EXT_LOCATION/up
+# default
+.SHELLFLAGS := -c
+# makefile (from 'Makefile', line 8)
+BFLAGS := -d
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from 'Makefile', line 49)
+CPPFLAGS = $(INC_FLAGS) -MMD -MP
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /home/ryj/compiler/mycompiler
+# makefile
+SHELL = /bin/sh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"4d12339779e8282869a6d44b7af3df1e.zh-cn","_translationsConfigFile":"/home/ryj/.vscode-server/data/clp/4d12339779e8282869a6d44b7af3df1e.zh-cn/tcf.json","_cacheRoot":"/home/ryj/.vscode-server/data/clp/4d12339779e8282869a6d44b7af3df1e.zh-cn","_resolvedLanguagePackCoreLocation":"/home/ryj/.vscode-server/data/clp/4d12339779e8282869a6d44b7af3df1e.zh-cn/4af164ea3a06f701fe3e89a2bcbb421d2026b68f","_corruptedFile":"/home/ryj/.vscode-server/data/clp/4d12339779e8282869a6d44b7af3df1e.zh-cn/corrupted.info","_languagePackSupport":true}
+# environment
+_ = /home/ryj/.vscode-server/bin/4af164ea3a06f701fe3e89a2bcbb421d2026b68f/node
+# makefile (from 'Makefile', line 14)
+CFLAGS := -Wall -std=c11 -g -O0
+# makefile (from 'Makefile', line 46)
+INC_DIRS := /home/ryj/compiler/mycompiler/src /home/ryj/compiler/mycompiler/build
+# makefile (from '/home/ryj/compiler/mycompiler/build/main.cpp.d', line 1)
+MAKEFILE_LIST :=  Makefile /home/ryj/compiler/mycompiler/build/lexer.lex.cpp.d /home/ryj/compiler/mycompiler/build/parser.tab.cpp.d /home/ryj/compiler/mycompiler/build/ast_sysy.cpp.d /home/ryj/compiler/mycompiler/build/main.cpp.d
+# makefile (from 'Makefile', line 12)
+DEBUG = 0
+# 'override' directive
+GNUMAKEFLAGS := 
+# makefile (from 'Makefile', line 15)
+CXXFLAGS := -Wall -Wno-register -std=c++17 -g -O0
+# environment
+XDG_DATA_DIRS = /usr/local/share:/usr/share:/var/lib/snapd/desktop
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# makefile (from 'Makefile', line 42)
+OBJS := /home/ryj/compiler/mycompiler/build/lexer.lex.cpp.o /home/ryj/compiler/mycompiler/build/parser.tab.cpp.o /home/ryj/compiler/mycompiler/build/ast_sysy.cpp.o /home/ryj/compiler/mycompiler/build/main.cpp.o
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# environment
+VSCODE_CWD = /mnt/d/vscode/Microsoft VS Code
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+PATH = /home/ryj/.vscode-server/bin/4af164ea3a06f701fe3e89a2bcbb421d2026b68f/bin/remote-cli:/home/ryj/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.6/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.6/libnvvp:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/d/mywingw/mingw64/bin:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2022.1.1/:/mnt/c/Users/ryj/miniconda3:/mnt/c/Users/ryj/miniconda3/Scripts:/mnt/c/Users/ryj/miniconda3/Library/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Users/ryj/scoop/shims:/mnt/c/Users/ryj/AppData/Local/Microsoft/WindowsApps:/mnt/d/vscode/Microsoft VS Code/bin:/snap/bin
+# environment
+XDG_RUNTIME_DIR = /mnt/wslg/runtime-dir
+# makefile (from 'Makefile', line 7)
+FFLAGS := 
+# environment
+VSCODE_LOG_STACK = false
+# environment
+VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-d7fc9e7c-0648-4333-8011-4a4f9b0cd02d.sock
+# makefile (from 'Makefile', line 9)
+LDFLAGS := 
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = :0
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+PWD = /home/ryj/compiler/mycompiler
+# default
+.LOADED := 
+# environment
+WSL_INTEROP = /run/WSL/12_interop
+# environment
+PULSE_SERVER = /mnt/wslg/PulseServer
+# makefile (from 'Makefile', line 47)
+INC_FLAGS := -I/home/ryj/compiler/mycompiler/src -I/home/ryj/compiler/mycompiler/build
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/ryj
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# environment
+LOGNAME = ryj
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile (from 'Makefile', line 29)
+TARGET_EXEC := minic
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# makefile (from 'Makefile', line 36)
+SRCS :=  /home/ryj/compiler/mycompiler/build/lexer.lex.cpp  /home/ryj/compiler/mycompiler/build/parser.tab.cpp /home/ryj/compiler/mycompiler/src/ast_sysy.cpp /home/ryj/compiler/mycompiler/src/main.cpp
+# environment
+SHLVL = 0
+# makefile (from 'Makefile', line 35)
+FB_SRCS :=  /home/ryj/compiler/mycompiler/build/lexer.lex.cpp  /home/ryj/compiler/mycompiler/build/parser.tab.cpp
+# makefile (from 'Makefile', line 22)
+CC := gcc
+# makefile (from 'Makefile', line 30)
+BUILD_DIR = $(TOP_DIR)/build
+# default
+MAKE_VERSION := 4.2.1
+# environment
+USER = ryj
+# makefile
+.DEFAULT_GOAL := /home/ryj/compiler/mycompiler/build/minic
+# environment
+NAME = LAPTOP-791NEAQ9
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# makefile (from 'Makefile', line 25)
+BISON := bison
+# environment
+VSCODE_WSL_EXT_LOCATION = /mnt/c/Users/ryj/.vscode/extensions/ms-vscode-remote.remote-wsl-0.66.3
+# default
+MAKE_COMMAND := make
+# makefile (from 'Makefile', line 62)
+define cxx_recipe
+	mkdir -p $(dir $@)
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -c $< -o $@
+endef
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# makefile (from 'Makefile', line 24)
+FLEX := flex
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# environment
+VSCODE_HANDLES_SIGPIPE = true
+# 'override' directive
+.SHELLSTATUS := 0
+# default
+MAKEFILES := 
+# makefile (from 'Makefile', line 31)
+SRC_DIR := /home/ryj/compiler/mycompiler/src
+# automatic
+<F = $(notdir $<)
+# makefile (from 'Makefile', line 23)
+CXX := g++
+# environment
+LC_ALL = C
+# environment
+HOSTTYPE = x86_64
+# automatic
+^F = $(notdir $^)
+# makefile (from 'Makefile', line 48)
+DEPS := /home/ryj/compiler/mycompiler/build/lexer.lex.cpp.d /home/ryj/compiler/mycompiler/build/parser.tab.cpp.d /home/ryj/compiler/mycompiler/build/ast_sysy.cpp.d /home/ryj/compiler/mycompiler/build/main.cpp.d
+# default
+SUFFIXES := 
+# environment
+WAYLAND_DISPLAY = wayland-0
+# makefile (from 'Makefile', line 28)
+TOP_DIR := /home/ryj/compiler/mycompiler
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# default
+.RECIPEPREFIX := 
+# environment
+LANG = C
+# environment
+TERM = xterm-256color
+# environment
+VSCODE_EXTHOST_WILL_SEND_SOCKET = true
+# environment
+WSL_DISTRO_NAME = Ubuntu20.04LTS
+# variable set hash-table stats:
+# Load=94/1024=9%, Rehash=0, Collisions=17/232=7%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 2080, inode 34831): 12 files, no impossibilities.
+# /home/ryj/compiler/mycompiler/build (device 2080, inode 108117): No files, no impossibilities so far.
+# /home/ryj/compiler/mycompiler/src (device 2080, inode 107628): No files, no impossibilities so far.
+
+# 12 files, no impossibilities in 3 directories.
+
+# Implicit Rules
+
+/home/ryj/compiler/mycompiler/build/%.c.o: /home/ryj/compiler/mycompiler/src/%.c
+#  recipe to execute (from 'Makefile', line 58):
+	mkdir -p $(dir $@)
+	$(CC) $(CPPFLAGS) $(CFLAGS) -c $< -o $@
+
+/home/ryj/compiler/mycompiler/build/%.cpp.o: /home/ryj/compiler/mycompiler/src/%.cpp
+#  recipe to execute (from 'Makefile', line 66):
+	 $(cxx_recipe)
+
+/home/ryj/compiler/mycompiler/build/%.cpp.o: /home/ryj/compiler/mycompiler/build/%.cpp
+#  recipe to execute (from 'Makefile', line 67):
+	 $(cxx_recipe)
+
+/home/ryj/compiler/mycompiler/build/%.cc.o: /home/ryj/compiler/mycompiler/src/%.cc
+#  recipe to execute (from 'Makefile', line 68):
+	 $(cxx_recipe)
+
+/home/ryj/compiler/mycompiler/build/%.lex.cpp: /home/ryj/compiler/mycompiler/src/%.l
+#  recipe to execute (from 'Makefile', line 72):
+	mkdir -p $(dir $@)
+	$(FLEX) $(FFLAGS) -o $@ $<
+
+/home/ryj/compiler/mycompiler/build/%.tab.cpp: /home/ryj/compiler/mycompiler/src/%.y
+#  recipe to execute (from 'Makefile', line 77):
+	mkdir -p $(dir $@)
+	$(BISON) $(BFLAGS) -o $@ $<
+
+# 6 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+/home/ryj/compiler/mycompiler/build/parser.tab.hpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/ryj/compiler/mycompiler/build/ast_sysy.cpp.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-11 10:34:40.146613208
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+/home/ryj/compiler/mycompiler/build/lexer.lex.cpp.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-08 22:48:17.269216634
+#  File has been updated.
+#  Successfully updated.
+
+ 
+.PHONY: clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-09 22:00:25.140706178
+#  File has been updated.
+#  Successfully updated.
+
+/home/ryj/compiler/mycompiler/build/ast_sysy.cpp.o: /home/ryj/compiler/mycompiler/src/ast_sysy.cpp /home/ryj/compiler/mycompiler/src/ast_sysy.h /home/ryj/compiler/mycompiler/src/../build/parser.tab.hpp
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+/home/ryj/compiler/mycompiler/build/lexer.lex.cpp.o: /home/ryj/compiler/mycompiler/build/lexer.lex.cpp /home/ryj/compiler/mycompiler/src/ast_sysy.h /home/ryj/compiler/mycompiler/build/parser.tab.hpp
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/ryj/compiler/mycompiler/build/lexer.lex.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/ryj/compiler/mycompiler/build/main.cpp.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 23:27:05.579681869
+#  File has been updated.
+#  Successfully updated.
+
+/home/ryj/compiler/mycompiler/src/ast_sysy.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/ryj/compiler/mycompiler/build/parser.tab.cpp.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-08 22:48:17.649216629
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/ryj/compiler/mycompiler/src/ast_sysy.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 84):
+	-rm -rf $(BUILD_DIR)
+
+/home/ryj/compiler/mycompiler/src/../build/parser.tab.hpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+/home/ryj/compiler/mycompiler/build/main.cpp.o: /home/ryj/compiler/mycompiler/src/main.cpp
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+/home/ryj/compiler/mycompiler/build/minic: /home/ryj/compiler/mycompiler/build/lexer.lex.cpp /home/ryj/compiler/mycompiler/build/parser.tab.cpp /home/ryj/compiler/mycompiler/build/lexer.lex.cpp.o /home/ryj/compiler/mycompiler/build/parser.tab.cpp.o /home/ryj/compiler/mycompiler/build/ast_sysy.cpp.o /home/ryj/compiler/mycompiler/build/main.cpp.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 54):
+	$(CXX) $(LDFLAGS) $(OBJS) -o $@
+
+/home/ryj/compiler/mycompiler/build/parser.tab.cpp.o: /home/ryj/compiler/mycompiler/build/parser.tab.cpp /home/ryj/compiler/mycompiler/src/ast_sysy.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/ryj/compiler/mycompiler/build/parser.tab.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/ryj/compiler/mycompiler/src/main.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=22/1024=2%, Rehash=0, Collisions=0/62=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 48 / storage = 1474 B / avg = 30 B
+# current buf: size = 8162 B / used = 1474 B / count = 48 / avg = 30 B
+
+# strcache performance: lookups = 83 / hit rate = 42%
+# hash-table stats:
+# Load=48/8192=1%, Rehash=0, Collisions=1/83=1%
+# Finished Make data base on Mon Jun 13 15:35:51 2022
+
+ 

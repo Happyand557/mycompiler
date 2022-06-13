@@ -1,0 +1,24 @@
+space: root
+
+func: 
+getint  type: int
+getch  type: int
+getarray  type: int
+putint  type: void
+putch  type: void
+putarray  type: void
+starttime  type: void
+stoptime  type: void
+if_if_Else  type: int
+main  type: int
+
+  space: if_if_Else
+  val:
+  a  
+  b  
+
+
+
+
+
+

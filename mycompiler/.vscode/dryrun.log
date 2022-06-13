@@ -1,0 +1,18 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/ryj/compiler/mycompiler'
+ 
+mkdir -p /home/ryj/compiler/mycompiler/build/
+flex  -o /home/ryj/compiler/mycompiler/build/lexer.lex.cpp /home/ryj/compiler/mycompiler/src/lexer.l
+mkdir -p /home/ryj/compiler/mycompiler/build/
+bison -d -o /home/ryj/compiler/mycompiler/build/parser.tab.cpp /home/ryj/compiler/mycompiler/src/parser.y
+mkdir -p /home/ryj/compiler/mycompiler/build/
+g++ -I/home/ryj/compiler/mycompiler/src -I/home/ryj/compiler/mycompiler/build -MMD -MP -Wall -Wno-register -std=c++17 -g -O0 -c /home/ryj/compiler/mycompiler/build/lexer.lex.cpp -o /home/ryj/compiler/mycompiler/build/lexer.lex.cpp.o
+mkdir -p /home/ryj/compiler/mycompiler/build/
+g++ -I/home/ryj/compiler/mycompiler/src -I/home/ryj/compiler/mycompiler/build -MMD -MP -Wall -Wno-register -std=c++17 -g -O0 -c /home/ryj/compiler/mycompiler/build/parser.tab.cpp -o /home/ryj/compiler/mycompiler/build/parser.tab.cpp.o
+mkdir -p /home/ryj/compiler/mycompiler/build/
+g++ -I/home/ryj/compiler/mycompiler/src -I/home/ryj/compiler/mycompiler/build -MMD -MP -Wall -Wno-register -std=c++17 -g -O0 -c /home/ryj/compiler/mycompiler/src/ast_sysy.cpp -o /home/ryj/compiler/mycompiler/build/ast_sysy.cpp.o
+mkdir -p /home/ryj/compiler/mycompiler/build/
+g++ -I/home/ryj/compiler/mycompiler/src -I/home/ryj/compiler/mycompiler/build -MMD -MP -Wall -Wno-register -std=c++17 -g -O0 -c /home/ryj/compiler/mycompiler/src/main.cpp -o /home/ryj/compiler/mycompiler/build/main.cpp.o
+g++  /home/ryj/compiler/mycompiler/build/lexer.lex.cpp.o /home/ryj/compiler/mycompiler/build/parser.tab.cpp.o /home/ryj/compiler/mycompiler/build/ast_sysy.cpp.o /home/ryj/compiler/mycompiler/build/main.cpp.o -o /home/ryj/compiler/mycompiler/build/minic
+make: Leaving directory '/home/ryj/compiler/mycompiler'
+ 

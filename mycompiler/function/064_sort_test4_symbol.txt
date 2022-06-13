@@ -1,0 +1,47 @@
+space: root
+val:
+n  
+
+func: 
+getint  type: int
+getch  type: int
+getarray  type: int
+putint  type: void
+putch  type: void
+putarray  type: void
+starttime  type: void
+stoptime  type: void
+select_sort  type: int
+main  type: int
+
+  space: select_sort
+  val:
+  A  shape: [1]
+  n  
+  i  
+  j  
+  min  
+
+
+
+
+
+
+
+
+      space: block
+      val:
+      tmp  
+
+
+  space: main
+  val:
+  a  shape: [10]
+  i  
+
+
+    space: block
+    val:
+    tmp  
+
+

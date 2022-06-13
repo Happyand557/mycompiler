@@ -1,0 +1,40 @@
+space: root
+
+func: 
+getint  type: int
+getch  type: int
+getarray  type: int
+putint  type: void
+putch  type: void
+putarray  type: void
+starttime  type: void
+stoptime  type: void
+deepWhileBr  type: int
+main  type: int
+
+  space: deepWhileBr
+  val:
+  a  
+  b  
+  c  
+
+
+    space: block
+    val:
+    d  
+
+
+
+
+        space: block
+        val:
+        e  
+
+
+
+
+  space: main
+  val:
+  p  
+
+

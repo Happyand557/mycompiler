@@ -1,0 +1,131 @@
+space: root
+val:
+ints  shape: [10000]
+intt  
+chas  shape: [10000]
+chat  
+i  
+ii  
+c  
+get  shape: [10000]
+get2  shape: [10000]
+
+func: 
+getint  type: int
+getch  type: int
+getarray  type: int
+putint  type: void
+putch  type: void
+putarray  type: void
+starttime  type: void
+stoptime  type: void
+isdigit  type: int
+power  type: int
+getstr  type: int
+intpush  type: void
+chapush  type: void
+intpop  type: int
+chapop  type: int
+intadd  type: void
+find  type: int
+main  type: int
+
+  space: isdigit
+  val:
+  x  
+
+
+  space: power
+  val:
+  b  
+  a  
+  result  
+
+
+
+
+  space: getstr
+  val:
+  get  shape: [1]
+  x  
+  length  
+
+
+
+
+  space: intpush
+  val:
+  x  
+
+
+  space: chapush
+  val:
+  x  
+
+
+
+
+
+
+  space: intadd
+  val:
+  x  
+
+
+
+
+  space: main
+  val:
+  lengets  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    space: block
+    val:
+    c  
+
+
+
+
+      space: block
+      val:
+      a  
+      b  
+      c  
+
+
+
+
+
+
+
+

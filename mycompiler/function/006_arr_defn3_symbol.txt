@@ -1,0 +1,22 @@
+space: root
+
+func: 
+getint  type: int
+getch  type: int
+getarray  type: int
+putint  type: void
+putch  type: void
+putarray  type: void
+starttime  type: void
+stoptime  type: void
+main  type: int
+
+  space: main
+  val:
+  a  shape: [4,2]
+  b  shape: [4,2]
+  c  shape: [4,2]
+  d  shape: [4,2]
+  e  shape: [4,2]
+
+

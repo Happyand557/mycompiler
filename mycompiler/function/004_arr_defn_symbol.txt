@@ -1,0 +1,17 @@
+space: root
+val:
+a  shape: [10]
+
+func: 
+getint  type: int
+getch  type: int
+getarray  type: int
+putint  type: void
+putch  type: void
+putarray  type: void
+starttime  type: void
+stoptime  type: void
+main  type: int
+
+
+

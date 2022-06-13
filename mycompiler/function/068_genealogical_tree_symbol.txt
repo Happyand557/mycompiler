@@ -1,0 +1,50 @@
+space: root
+val:
+map  shape: [10,10]
+indegree  shape: [10]
+queue  shape: [10]
+
+func: 
+getint  type: int
+getch  type: int
+getarray  type: int
+putint  type: void
+putch  type: void
+putarray  type: void
+starttime  type: void
+stoptime  type: void
+topo  type: void
+main  type: int
+
+  space: topo
+  val:
+  n  
+  m  
+  t  
+  i  
+  j  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  space: main
+  val:
+  n  
+  p  
+  i  
+
+
+
+
+
+

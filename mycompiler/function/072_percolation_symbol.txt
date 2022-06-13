@@ -1,0 +1,83 @@
+space: root
+val:
+array  shape: [110]
+n  
+
+func: 
+getint  type: int
+getch  type: int
+getarray  type: int
+putint  type: void
+putch  type: void
+putarray  type: void
+starttime  type: void
+stoptime  type: void
+init  type: void
+findfa  type: int
+mmerge  type: void
+main  type: int
+
+  space: init
+  val:
+  n  
+  i  
+
+
+
+
+  space: findfa
+  val:
+  a  
+
+
+
+
+  space: mmerge
+  val:
+  a  
+  b  
+  m  
+  n  
+
+
+  space: main
+  val:
+  t  
+  m  
+  a  
+  b  
+
+
+    space: block
+    val:
+    i  
+    flag  
+    k  
+
+
+
+
+        space: block
+        val:
+        loc  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          space: block
+          val:
+          tmp  
+
+
+
+
