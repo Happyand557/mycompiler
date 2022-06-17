@@ -8,6 +8,7 @@
 #include <unordered_set>
 #include<string.h>
 #include"../build/parser.tab.hpp"
+#define DEBUG
 using namespace std;
 extern FILE *sysyin;
 extern FILE *sysyout;
@@ -1181,9 +1182,6 @@ static void irgen(AST *th){
             irgen_Decl(th->son[i]);
         } else if(th->son[i]->type==_FuncDef){
             func_begin_t = t_i;
-            #ifdef DEBUG
-                printf("%d\n",Max_t_i);
-            #endif
             irgen_FuncDef(th->son[i]);
         }
     }
@@ -1672,7 +1670,7 @@ void traverse_table(TABLE *tableItem,int depth,FILE* file)
         traverse_table(index,depth+1,file);
     }
 }
-
+//根据行数找到startline对应的块Index
 int findIndex(int lineNum, vector<int> startLine) {
     for(int i = 0; i < startLine.size(); i++) {
         if(lineNum > startLine[i]) {
@@ -1695,6 +1693,7 @@ void getLinearIR(char *file, string functionName) {
     bool flag = true;
     bool isEnd = false;
     bool firstIn = true;
+    vector<int> jmpfromVec;
     vector<int> startLine;//获取第一行和跳转后面的块
     unordered_set<int> labelSet;//获取可跳转的label集合
     vector<int> labelVec;//记录所有label的标签
@@ -1742,10 +1741,14 @@ void getLinearIR(char *file, string functionName) {
             int label = atoi(textLine.substr(idx + 8, textLine.length()- idx - 8).c_str());
             auto idx = textLine.find("br");
             if(idx != string::npos) {
-                jrLine.push_back(make_pair(lineNum,label));
+                jmpfromVec.push_back(lineNum);
                 startLine.push_back(lineNum+1);
+                labelSet.insert(label);
+                jrLine.push_back(make_pair(lineNum,label));
             }
             else {
+                jmpfromVec.push_back(lineNum);
+                labelSet.insert(label);
                 startLine.push_back(lineNum+1);
                 jumpLine.push_back(make_pair(lineNum,label));
             }
@@ -1761,7 +1764,11 @@ void getLinearIR(char *file, string functionName) {
             }
         }
     }
+    sort(startLine.begin(),startLine.end());
     //得到跳转关系
+    for(auto &jmpline : jmpfromVec) {
+        jmpline = findIndex(jmpline, startLine);
+    }
     for(auto label : jrLine) {
         jrIndex.push_back(make_pair(findIndex(label.first,startLine), findIndex(labelToLine[label.second],startLine)));
     }
@@ -1772,7 +1779,6 @@ void getLinearIR(char *file, string functionName) {
     vector<vector<string> > baseBlock;
     vector<string> strVector;
     inFile.seekg(0,std::ios::beg);
-    sort(startLine.begin(),startLine.end());
     lineNum = 1;
     int index = 0;//基本块的索引
     int end = startLine.size() > 1?startLine[1]:0;
@@ -1832,6 +1838,13 @@ void getLinearIR(char *file, string functionName) {
             outFile<<"  shape"<<line.first<<" -> " <<"shape"<< line.first+1<<"\n";
         }
         outFile<<"  shape"<<line.first<<" -> " <<"shape" << line.second<<"\n";
+    }
+    for(int i = 0; i < startLine.size(); i++) {
+        if(i != startLine.size()-1) {
+            if(find(jmpfromVec.begin(), jmpfromVec.end(), i) == jmpfromVec.end()) {
+                outFile<<"  shape"<<i<<" -> " <<"shape" << i+1<<"\n";
+            }
+        }
     }
     outFile<<"}";
     outFile.close();
